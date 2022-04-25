@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create Envelope with Composite Templates - Activity Final Code</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-coy.min.css"
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-coy.min.css"
     integrity="sha512-CKzEMG9cS0+lcH4wtn/UnxnmxkaTFrviChikDEk1MAWICCSN59sDWIF0Q5oDgdG9lxVrvbENSV1FtjLiBnMx7Q=="
-    crossorigin="anonymous" />
+    crossorigin="anonymous" /> -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-numbers/prism-line-numbers.min.css"
     integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ=="
@@ -19,98 +19,19 @@
 </head>
 
 <body class="line-numbers">
-  <pre><code class="language-json">{
-  "compositeTemplates": [
-    {
-      "document": {
-        "documentBase64": "{{ Base64BytesHere }}",
-        "documentId": "1",
-        "fileExtension": "docx",
-        "name": "CoverLetter"
-      },
-      "inlineTemplates": [
-        {
-          "recipients": {
-            "signers": [
-              {
-                "email": "seller@example.com",
-                "name": "Example Seller",
-                "recipientId": "1",
-                "roleName": "Seller"
-              },
-              {
-                "email": "buyer@example.com",
-                "name": "Example Buyer",
-                "recipientId": "2",
-                "roleName": "Buyer"
-              }
-            ]
-          },
-          "sequence": "1"
-        }
-      ]
-    },
-    {
-      "inlineTemplates": [
-        {
-          "recipients": {
-            "signers": [
-              {
-                "email": "seller@example.com",
-                "name": "Example Seller",
-                "recipientId": "1",
-                "roleName": "Seller"
-              },
-              {
-                "email": "buyer@example.com",
-                "name": "Example Buyer",
-                "recipientId": "2",
-                "roleName": "Buyer"
-              }
-            ]
-          },
-          "sequence": "2"
-        }
-      ],
-      "serverTemplates": [
-        {
-          "sequence": "1",
-          "templateId": "564dc294-xxxx-xxxx-xxxx-db96051b2cc4"
-        }
-      ]
-    },
-    {
-      "inlineTemplates": [
-        {
-          "recipients": {
-            "signers": [
-              {
-                "email": "seller@example.com",
-                "name": "Example Seller",
-                "recipientId": "1",
-                "roleName": "Seller"
-              },
-              {
-                "email": "buyer@example.com",
-                "name": "Example Buyer",
-                "recipientId": "2",
-                "roleName": "Buyer"
-              }
-            ]
-          },
-          "sequence": "2"
-        }
-      ],
-      "serverTemplates": [
-        {
-          "sequence": "1",
-          "templateId": "3f61ed1e-xxxx-xxxx-xxxx-affdf6d4e8ec"
-        }
-      ]
-    }
-  ],
-  "status": "sent"
-}</code></pre>
+  <pre><code class="language-html">
+    <ul id="features">
+      <li>
+        <strong>Dead simple</strong>
+        Include prism.css and prism.js, use proper HTML5 code tags (<code>code.language-xxxx</code>), done!
+      </li>
+      <li>
+        <strong>Intuitive</strong>
+        Language classes are inherited so you can only define the language once for multiple code snippets.
+      </li>
+    </ul>
+
+  </code></pre>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"
     integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA=="
     crossorigin="anonymous"></script>
