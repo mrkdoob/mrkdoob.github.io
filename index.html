@@ -1,1 +1,128 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Envelope with Composite Templates - Activity Final Code</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-coy.min.css"
+    integrity="sha512-CKzEMG9cS0+lcH4wtn/UnxnmxkaTFrviChikDEk1MAWICCSN59sDWIF0Q5oDgdG9lxVrvbENSV1FtjLiBnMx7Q=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-numbers/prism-line-numbers.min.css"
+    integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-highlight/prism-line-highlight.min.css"
+    integrity="sha512-/yZlirVRhdToT7oiRODRoRwgYMwFnZYvUdie2MNHpv9XMIeWtwoVBqkkkQPOy9A+ZDYKysodYzr9cqsU7bsH0Q=="
+    crossorigin="anonymous" />
+</head>
+
+<body class="line-numbers">
+  <pre><code class="language-json">{
+  "compositeTemplates": [
+    {
+      "document": {
+        "documentBase64": "{{ Base64BytesHere }}",
+        "documentId": "1",
+        "fileExtension": "docx",
+        "name": "CoverLetter"
+      },
+      "inlineTemplates": [
+        {
+          "recipients": {
+            "signers": [
+              {
+                "email": "seller@example.com",
+                "name": "Example Seller",
+                "recipientId": "1",
+                "roleName": "Seller"
+              },
+              {
+                "email": "buyer@example.com",
+                "name": "Example Buyer",
+                "recipientId": "2",
+                "roleName": "Buyer"
+              }
+            ]
+          },
+          "sequence": "1"
+        }
+      ]
+    },
+    {
+      "inlineTemplates": [
+        {
+          "recipients": {
+            "signers": [
+              {
+                "email": "seller@example.com",
+                "name": "Example Seller",
+                "recipientId": "1",
+                "roleName": "Seller"
+              },
+              {
+                "email": "buyer@example.com",
+                "name": "Example Buyer",
+                "recipientId": "2",
+                "roleName": "Buyer"
+              }
+            ]
+          },
+          "sequence": "2"
+        }
+      ],
+      "serverTemplates": [
+        {
+          "sequence": "1",
+          "templateId": "564dc294-xxxx-xxxx-xxxx-db96051b2cc4"
+        }
+      ]
+    },
+    {
+      "inlineTemplates": [
+        {
+          "recipients": {
+            "signers": [
+              {
+                "email": "seller@example.com",
+                "name": "Example Seller",
+                "recipientId": "1",
+                "roleName": "Seller"
+              },
+              {
+                "email": "buyer@example.com",
+                "name": "Example Buyer",
+                "recipientId": "2",
+                "roleName": "Buyer"
+              }
+            ]
+          },
+          "sequence": "2"
+        }
+      ],
+      "serverTemplates": [
+        {
+          "sequence": "1",
+          "templateId": "3f61ed1e-xxxx-xxxx-xxxx-affdf6d4e8ec"
+        }
+      ]
+    }
+  ],
+  "status": "sent"
+}</code></pre>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"
+    integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-numbers/prism-line-numbers.min.js"
+    integrity="sha512-1oLZvExT5RaW4q2GgvRPf+XzVVGmsKirfZBRN7aifdOpvZ1L9idEncfMFlfHiQNGBA+Sev+alscSAT/xQ0rwXA=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"
+    integrity="sha512-Q3qGP1uJL/B0sEmu57PKXjCirgPKMbg73OLRbTJ6lfHCVU5zkHqmcTI5EV2fSoPV1MHdKsCBE7m/aS6q0pPjRQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-highlight/prism-line-highlight.min.js"
+    integrity="sha512-bteQ1XlrEhUJh3mGgo0bneDWpfAAfGxE2lIVPNUolk26uqqsMwHiH+CeWCCURtT3yrCsvgQP7xrdjWTMMopObQ=="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
